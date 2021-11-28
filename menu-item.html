@@ -1,20 +1,129 @@
-<div class="menu-item-tile col-md-6">
-    <div class="row">
-        <div class="col-sm-5">
-            <div class="menu-item-photo">
-                <div>{{short_name}}</div>
-                <img class="img-responsive" width="250" height="150" src="1.jpg" alt="item">
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <title>Special Menu Items</title>
+       <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+     
+     <link rel="stylesheet" href="styles.css">
+ 
+     <!--imported Google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">        
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+      </head>
+      <body>
+        <header>
+            <nav id="header-nav" class="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="HomePage.html">
+                            <div id="logo-img" class="d-none d-md-block">
+                                <img src="./images/logo.JPG" height="100" width="100">
+                            </div>
+                        </a>
+                        <div class="navbar-brand">
+                            <h2>Chitralaya</h2> 
+                            <p>
+                                <!--glyphicon glyphicon-star-->
+                                <img class="fa fa-star" alt="AICDC-Certified">
+                                <span>AICDC Certified</span>
+                            </p>
+                       </div>
+                       <button class="btn btn-primary" type="button" data-target="#collapsable-nav" data-toggle="collapse" aria-expanded="false" aria-controls="#contentId">              
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                </button>  
+                <div id="collapsable-nav" class="collapse">
+                    <ul id="nav-list" class="nav navbar-nav">
+                        <li class="d-block d-sm-none active">
+                            <a href="menu-categories.html">
+                            <span class="fa fa-th"></span>Menu</a>
+                        </li>
+                        <li>
+                            <a href="About_Award.html" target="#About">
+                                <span class="fa fa-info"></span>
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="About_Award.html" target="#Award">
+                                <span class="fa fa-certificate"></span>
+                                Awards
+                            </a>
+                        </li>
+                        <li id="phone" class="d-none d-sm-block">
+                            <a href="tel:410-602-5008">
+                                <span><i class="fa fa-phone" aria-hidden="true"></i>Phone - 410-602-5008</span>
+                                <br class="d-none d-sm-block">
+                            </a>
+                            <div>*We Deliver</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu-item-price">{{price_small}}
-                <span>{{small_portion_name}}</span>
-                <span>{{price_large}}</span>
-                <span>{{large_portion_name}}</span>
-            </div>
-            <div class="menu-item-description col-sm-7">
-                <h3 class="menu-item-title">{{name}}</h3>
-                <p class="menu-item-details">{{description}}</p>
+        </nav>
+    </header>
+         <!--END of Header Section-->
+         <div class="menu-item-tile">
+        <!-- <div class="row">
+            <div class="col-sm-5">
+                <div class="menu-item-photo">
+                    <div>{{short_name}}</div>
+                    <img class="img-responsive" width="250" height="150" src="1.jpg" alt="item">
+                </div>
+                <div class="menu-item-price">{{price_small}}
+                    <span>{{small_portion_name}}</span>
+                    <span>{{price_large}}</span>
+                    <span>{{large_portion_name}}</span>
+                </div>
+                <div class="menu-item-description col-sm-7">
+                    <h3 class="menu-item-title">{{name}}</h3>
+                    <p class="menu-item-details">{{description}}</p>
+                </div>
+            </div> -->
+        </div>
+            <hr class="d-block d-sm-none">
+        </div>
+    </div>
+           <!--Footer-->
+      <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <section id="hours" class="col-sm-4">
+                    <span>Hours:</span><br>
+                    Sun-Thurs: 11:15am - 10pm<br>
+                    Fri: 11:15am - 2:30pm<br>
+                    Saturday closed.
+                    <hr class="d-block d-sm-none">
+                </section>
+                <section id="address" class="col-sm-4">
+                  <span>Address:</span><br>
+                  Sail City Apartments<br>
+                  New Pundag<br>
+                  <p>*Delivery area within 3-4 miles, with minimum order of Rs.800 plus Rs.50 for all deliverables.</p>
+                  <hr class="d-block d-sm-none">
+              </section>
+              <section id="testimonials" class="col-sm-4">
+                  <span>Testimonials:</span>
+                  <p>"Amazing art! Great service! Couldn't ask for more. I will place more orders."</p>
+                  <hr class="d-block d-sm-none">
+              </section>
             </div>
         </div>
-        <hr class="visible-xs">
-    </div>
-</div>
+    </footer>
+        <!-- Optional JavaScript -->
+        <script src="script1.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
+    </html><div class="menu-item-tile col-md-6">
+    

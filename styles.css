@@ -3,6 +3,7 @@ body{
     color: #fff;
     background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
+   
 }
 /*Header Section*/
 #header-nav{
@@ -11,9 +12,6 @@ body{
     border-radius: 0%;
 }
 #logo-img{
-    background: url('2.jpg') no-repeat;
-    width: 150px;
-    height: 120px;
     margin: 10px 15px 10px 0px;
     float: left;
 }
@@ -46,16 +44,35 @@ body{
 .navbar-brand p span{
     vertical-align: middle;
 }
+
+/*border of toggle button- .navbar-header .btn ,.navbar-header .navbar-toggler-icon*/
+.navbar-header .btn{ 
+    border:1px solid #61122f;
+    clear: both;
+    /*padding: 5px;
+    float: right;*/
+}
+
 /*toggle button nav-list*/
 #nav-list{
     margin-top: 10px;
+    
+}
+#collapsable-nav li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: right;
+    margin: 0 20px 10px 20px;
 }
 #nav-list a{
     color: #951C49;
-    text-align: center;
+    
 }
 #nav-list a:hover{
     background: #e7e7e7;
+    text-decoration: none;
 }
 #nav-list a span{
     font-size: 1.2em;
@@ -67,28 +84,33 @@ body{
 #phone div{/*we deliver*/
     color: #5573ce;
     text-align: right;
-    padding-right: 15px;
+    padding-right: 10px;
 }
-/*border of toggle button*/
-.navbar-header button.navbar-toggle,.navbar-header .icon-bar{
-    border:1px solid #61122f;
-}
-.navbar-header button.navbar-toggle{
+
+.navbar-header {
     clear: both;
-}
+  }
 /* END Header */
 
 /*Homepage*/
 .container .jumbotron{
-    background: url('1.jpg') no-repeat;
+    background: url('./images/9.jpg') no-repeat;
+    z-index: -1;
+    height: fit-content;
+    width: auto;
+   justify-content: center;
     box-shadow: 0 0 50px #3f0c1f;
     border: 2px solid #3f0c1f;
+    margin-top: 20px;
+    filter: blur() brightness(50%);
 }
+
 #menu-tile, #specials-tile, #map-tile{
     height: 250px;
     width: 100%;
     margin-bottom:15px;
     position: relative;
+    justify-content: center;
     border: 2px solid #3f0c1f;
     border-radius: 10%;
     overflow: hidden;
@@ -96,14 +118,7 @@ body{
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover{
     box-shadow: 0 1px 5px 1px #cccccc;
 }
-#menu-tile{
-    background: url('1.jpg') no-repeat;
-    background-position:center ;
-}
-#specials-tile{
-    background: url('1.jpg') no-repeat;
-    background-position:center ;
-}
+
 #menu-tile span,#specials-tile span, #map-tile span{
     position: absolute;
     bottom: 0;
@@ -195,11 +210,13 @@ body{
 .menu-item-photo{
     position: relative;
     overflow: hidden;
-    padding:0;
+    padding: 10px;
     margin-right: -15px;
     margin-left: auto;
     margin-bottom: 20px;
     max-width: 250px;
+    width: fit-content;
+    height: 250px;
 }
 .menu-item-photo div{
     position: absolute;
@@ -207,10 +224,11 @@ body{
     right: 0;
     width: 80px;
     background-color: #5573ce;
-    text-align: center;
+    
 }
 .menu-item-description{
-    padding-right: 30px;
+    padding: 30px;
+    text-align: center;
 }
 h3.menu-item-title{
     margin: 0 0 10px;
@@ -224,26 +242,23 @@ h3.menu-item-title{
 @media(min-width:1200px){
     .container .jumbotron{
         height: 675px;
+        opacity: 0.8;
     }
 }
 /*medium devises only*/
 @media((min-width:992px) and (max-width:1199px) ){
     /*header*/
     #logo-img{
-        background: url('2.jpg') no-repeat;
-        width: 100px;
-        height: 100px;
+        width: .8em;
+        height: .9em;
         margin: 5px 5px 5px 0px;
     }
 }
 /*small devices only*/
 @media((min-width:786px) and (max-width:991px)){
     .container .jumbotron{
-        height: 432px;
-    }
-    .container .jumbotron{
-        height: 475px;
-        margin: 20px;
+        height: .8em;
+        width: .9em;
     }
 }
 /*extra small devices only*/
@@ -251,7 +266,7 @@ h3.menu-item-title{
     /*header*/
     .navbar-brand{
         padding-top: 10px;
-        height: 80px;
+        height: .8em;
     }
     .navbar-brand h2{/*gallery name*/
         padding-top: 10px;

@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <!-- Bootstrap CSS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
     
     <link rel="stylesheet" href="styles.css">
 
@@ -19,72 +22,84 @@
   </head>
   <body>
     <header>
-        <nav id="header-nav" class="navbar navbar-default">
+        <nav id="header-nav" class="navbar">
             <div class="container">
                 <div class="navbar-header">
-                   
                     <a href="HomePage.html">
-                        <div id="logo-img" class="visible-md"></div>
+                        <div id="logo-img" class="d-none d-md-block">
+                            <img src="./images/logo.JPG" height="100" width="100">
+                        </div>
                     </a>
                     <div class="navbar-brand">
                         <h2>Chitralaya</h2> 
                         <p>
-                            <img src="" class="glyphicon glyphicon-star" alt="NIIT-Certified">
-                            <span>NIIT Certified</span>
+                            <!--glyphicon glyphicon-star-->
+                            <img class="fa fa-star" alt="AICDC-Certified">
+                            <span>AICDC Certified</span>
                         </p>
                    </div>
-                   <button type="button" class="navbar-toggle collapsed"
-                   data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-                
-                   <span class="sr-only">Toggle Navigation</span> <!--sr means screen reader here--> 
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                 <!--<button type="button" class="navbar-toggler" data-toggle="collapse" 
+                   data-target="#collapsable-nav" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                          <span class="navbar-toggler-icon"><i class="fa fa-align-justify" aria-hidden="true"></i></span>   
                    </button>
-                 </div>
-                 <div id="collapsable-nav" class="collapse navbar-collapse">
-                     <ul id="nav-list" class="nav navbar-nav navbar-right">
-                         <li class="visible-xs active">
-                             <a href="menu-categories.html">
-                             <span class="glyphicon glyphicon-th"></span>
-                             <br class="hidden-xs">Menu</a>
-                         </li>
-                         <li>
-                            <a href="#">
-                            <span class="glyphicon glyphicon-picture"></span>
-                            <br class="hidden-xs">About</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            <span class="glyphicon glyphicon-certificate"></span>
-                            <br class="hidden-xs">Awards</a>
-                        </li>
-                        <li id="phone" class="hidden-xs">
-                            <a href="tel:410-602-5008">
-                            <span class="glyphicon glyphicon-phone-alt">Phone - 410-602-5008</span>
-                            <br class="hidden-xs"></a>
-                            <div>*We Deliver</div>
-                        </li>
-                     </ul>
-                 </div>
-            </div>
-        </nav>
-    </header>
+                   <span class="sr-only">Toggle Navigation</span>  sr means screen reader here -->
+                             
+                <button class="btn btn-primary" type="button" data-target="#collapsable-nav" data-toggle="collapse" aria-expanded="false" aria-controls="#contentId">              
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                </button>  
+                  
+                    <div id="collapsable-nav" class="collapse">
+                        <ul id="nav-list" class="nav navbar-nav">
+                            <li class="d-block d-sm-none active">
+                                <a href="menu-categories.html">
+                                <span class="fa fa-th"></span>Menu</a>
+                            </li>
+                            <li>
+                                <a href="About_Award.html" target="#About">
+                                    <span class="fa fa-info"></span>
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="About_Award.html" target="#Award">
+                                    <span class="fa fa-certificate"></span>
+                                    Awards
+                                </a>
+                            </li>
+                            <li id="phone" class="d-none d-sm-block">
+                                <a href="tel:410-602-5008">
+                                    <span><i class="fa fa-phone" aria-hidden="true"></i>Phone - 410-602-5008</span>
+                                    <br class="d-none d-sm-block">
+                                </a>
+                                <div>*We Deliver</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
            
-      <div class="container" id="main-content">
-          <div class="jumbotron">
-              <img class="img-responsive visible-xs">
-            </div>
+        <div class="container" id="main-content">
+            <div id="image" class="jumbotron">
 
+            </div>
+        
             <div id="home-tiles" class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <a href="menu-categories.html">
-                        <div id="menu-tile"><span>Home</span></div>
+                        <div id="menu-tile">
+                            <img src="./images/7.JPG" alt="Menu" height="250" width="100%">
+                            <span>Menu</span>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="menu-categories.html">
-                        <div id="specials-tile"><span>Specials</span></div>
+                    <a href="menu-item.html">
+                        <div id="specials-tile">
+                            <img src="./images/6.jpg" alt="Specials" height="250" width="100%">
+                            <span>Specials</span>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -107,19 +122,19 @@
                       Sun-Thurs: 11:15am - 10pm<br>
                       Fri: 11:15am - 2:30pm<br>
                       Saturday closed.
-                      <hr class="visible-xs">
+                      <hr class="d-block d-sm-none">
                   </section>
                   <section id="address" class="col-sm-4">
                     <span>Address:</span><br>
                     Sail City Apartments<br>
                     New Pundag<br>
                     <p>*Delivery area within 3-4 miles, with minimum order of Rs.800 plus Rs.50 for all deliverables.</p>
-                    <hr class="visible-xs">
+                    <hr class="d-block d-sm-none">
                 </section>
                 <section id="testimonials" class="col-sm-4">
                     <span>Testimonials:</span>
                     <p>"Amazing art! Great service! Couldn't ask for more. I will place more orders."</p>
-                    <hr class="visible-xs">
+                    <hr class="d-block d-sm-none">
                 </section>
               </div>
           </div>
