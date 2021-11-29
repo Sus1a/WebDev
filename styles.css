@@ -131,6 +131,7 @@ body{
     color: #fff;
     opacity: 0.8;
 }
+
 /*End main-content*/
 
 /*Footer*/
@@ -168,6 +169,7 @@ body{
     position:relative;
     border: 2px solid #3f0c1f;
     overflow: hidden;
+    vertical-align: auto;
     width: 200px;
     height: 200px;
     margin: 0 auto 15px;
